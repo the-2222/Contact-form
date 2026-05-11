@@ -5,6 +5,36 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+input
+{
+    width: 95%;
+    font-size: large;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 10px;
+}
+
+button
+{
+    background-color: hsl(0, 0%, 100%);
+    width: 90%;
+    border-radius: 5px;
+    border-width: 1px;
+    font-size: large;
+    padding: 5px;
+
+
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    padding-left: 20px;
+    align-items: center;
 }
 
 .box
@@ -19,8 +49,135 @@ body
 {
     display: flex;
     flex-direction: row;
+    width: 100%;
+}
+
+.double > div
+{
+    width: 50%;
+}
+
+.double > div > input
+{
+    width: 90%;
+}
+
+.g
+{
+    color:hsl(169, 82%, 27%);
+}
+
+.tg
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.submit
+{
+    width: 95%;
+    background-color: hsl(169, 82%, 27%);
+    font-weight: 600;
+    border:none;
+    color:hsl(0, 0%, 100%);
+    justify-content: center;
+    
+    height: 50px;
+}
+
+.submit:hover
+{
+    background-color: hsl(187, 24%, 22%);
+}
+
+input:focus
+{
+    outline: none;
+    border-color: hsl(169, 82%, 27%);
+    border-width: 2px;
+}
+
+input:hover
+{
+    outline: none;
+    border-color: hsl(169, 82%, 27%);
+    border-width: 2px;
+}
+
+button:focus
+{
+    outline: none;
+    border-color: hsl(169, 82%, 27%);
+    border-width: 2px;
+}
+
+#g_e:focus~.GE
+{
+    accent-color: hsl(0, 82%, 27%);
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px; 
+    accent-color: hsl(169, 82%, 27%);
+}
+
+#GE:checked ~ #g_e, 
+#SR:checked ~ #s_r
+{
+
+    background-color: hsl(186, 15%, 59%);
+    border-color: hsl(169, 82%, 27%);;
+    border-width: 2px;
 }
 
 
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: hsl(169, 82%, 27%);
+}
+
+
+.error
+{
+    color:hsl(0, 66%, 54%);
+    border-color: hsl(0, 66%, 54%);
+}
+
+#m
+{
+    font-size: medium;
+    height: 50px;
+    text-align: left;
+}
+
+
+
+
+.messageSent
+{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: hsl(187, 24%, 22%);
+    color:hsl(0, 0%, 100%);
+
+    margin-top: -1100px;
+    margin-bottom: 1100px;
+}
+
+.mesHead
+{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    margin: 5px;
+}
+
+.mesHead > h2
+{
+    margin: 5px;
+}
 .attribution { font-size: 0.6875rem; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

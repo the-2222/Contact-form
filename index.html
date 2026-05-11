@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link type="text/css" rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Contact form</title>
 </head>
 <body>
@@ -15,44 +20,60 @@
       <div>
         <div class="tg"><p>First Name</p><p class="g">*</p></div>
         <input type="text">
-        <p class="error" id="a">This field is required</p>
+        <p class="error" id="Ea">This field is required</p>
       </div>
       <div>
         <div class="tg"><p>Last Name</p><p class="g">*</p></div>
         <input type="text">
-        <p class="error" id="b">This field is required</p>
+        <p class="error" id="Eb">This field is required</p>
       </div>
     </div>
 
     <div class="tg"><p>Email Address</p><p class="g">*</p></div>
-    <input type="text">
-    <p class="error" id="a">Please enter a valid email address</p>
-    <p class="error" id="a">This field is required</p>
+    <input type="email">
+    <p class="error" id="Eca">Please enter a valid email address</p>  
+    <p class="error" id="Ecb">This field is required</p>
 
     <div class="tg"><p>Query Type</p><p class="g">*</p></div>
     <div class="double">
-      General Enquiry
-      Support Request
+      <div>
+        <button id="g_e"><input type="radio" name="a" value="ge" id="GE"><p>General Enquiry</p></button>
+      </div>
+      <div>
+        <button id="s_r"><input type="radio" name="a" value="sr" id="SR"><p>Support Request</p></button>
+      </div>
     </div>
-    <p class="error" id="a">Please select a query type</p>
+    <p class="error" id="Ed">Please select a query type</p>
 
     <div class="tg"><p>Message</p><p class="g">*</p></div>
     <input type="text" id="m">
-    <p class="error" id="a">This field is required</p>
+    <p class="error" id="Ee">This field is required</p>
+
+    <input type="checkbox" id="cb"><label for="cb">I consent to being contacted by the team</label>
+    <p class="error" id="Ef">To submit this form, please consent to being contacted</p>
+
+    <button class="submit">Submit</button>
   </div>
   
   
 
+  </div>
+
+  <div class="messageSent">
+    <div class="mesHead">
+      <img src="assets/images/icon-success-check.svg">
+      <h3>Message Sent!</h3>
+    </div>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+
   
-  This field is required
+  
 
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
+  
 
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
+  
+  
   
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
