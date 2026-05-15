@@ -111,27 +111,20 @@ button:focus
     border-width: 2px;
 }
 
-#g_e:focus~.GE
-{
-    accent-color: hsl(0, 82%, 27%);
-}
-
 input[type="radio"] {
     width: 20px;
     height: 20px; 
     accent-color: hsl(169, 82%, 27%);
 }
 
-#GE:checked ~ #g_e, 
+/* #GE:checked ~ #g_e, 
 #SR:checked ~ #s_r
 {
 
     background-color: hsl(186, 15%, 59%);
     border-color: hsl(169, 82%, 27%);;
     border-width: 2px;
-}
-
-
+} */
 
 input[type="checkbox"] {
     width: 18px;

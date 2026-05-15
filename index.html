@@ -10,10 +10,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-
+  
+  
+  
   <title>Frontend Mentor | Contact form</title>
 </head>
 <body>
+
+  <script src="script.js">  
+  </script>
+
+
   <div class="box">
     <h1>Contact Us</h1>
     <div class="double">
@@ -37,10 +44,10 @@
     <div class="tg"><p>Query Type</p><p class="g">*</p></div>
     <div class="double">
       <div>
-        <button id="g_e"><input type="radio" name="a" value="ge" id="GE"><p>General Enquiry</p></button>
+        <button id="g_e" onclick="SelectRadioByButton('GE')"><input type="radio" name="a" value="ge" id="GE" selected><p>General Enquiry</p></button>
       </div>
       <div>
-        <button id="s_r"><input type="radio" name="a" value="sr" id="SR"><p>Support Request</p></button>
+        <button id="s_r" onclick="SelectRadioByButton('SR')"><input type="radio" name="a" value="sr" id="SR"><p>Support Request</p></button>
       </div>
     </div>
     <p class="error" id="Ed">Please select a query type</p>
@@ -72,9 +79,7 @@
 
   
 
-  
-  
-  
+
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/the-2222">The-2222</a>.
